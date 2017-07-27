@@ -284,19 +284,6 @@ public:
         double &similarity) = 0;
 
     /**
-     * @brief This function sets the GPU device number to be used by all
-     * subsequent implementation function calls.  gpuNum is a zero-based
-     * sequence value of which GPU device to use.  0 would mean the first
-     * detected GPU, 1 would be the second GPU, etc.  If the implementation
-     * does not use GPUs, then this function call should simply do nothing.
-     *
-     * @param[in] gpuNum
-     * Index number representing which GPU to use
-     */
-    virtual ReturnStatus
-    setGPU(uint8_t gpuNum) = 0;
-
-    /**
      * @brief
      * Factory method to return a managed pointer to the VerifIntersoundrecord object.
      * @details

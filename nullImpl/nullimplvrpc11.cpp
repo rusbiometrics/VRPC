@@ -18,16 +18,8 @@ NullImplVRPC11::~NullImplVRPC11() {}
 ReturnStatus
 NullImplVRPC11::initialize(const std::string &configDir)
 {
-    this->whichGPU = 0;
     this->counter = 0;
     return ReturnStatus(ReturnCode::Success);
-}
-
-ReturnStatus
-NullImplVRPC11::setGPU(uint8_t gpuNum)
-{
-    this->whichGPU = gpuNum;
-	return ReturnStatus(ReturnCode::Success);
 }
 
 ReturnStatus
